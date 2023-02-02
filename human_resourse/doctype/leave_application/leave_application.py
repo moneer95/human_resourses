@@ -24,7 +24,8 @@ class LeaveApplication(Document):
     def set_total_leave_days(self):
         if (self.from_date and self.to_date):
             self.total_leave_days = date_diff(self.to_date, self.from_date) + 1
-
+    
+    # leave allocation operations
     def calc_leave_allocation(self):
         if self.negative_balance_allowed():
             if self.leave_balance - self.total_leave_days >= 0:
@@ -34,7 +35,8 @@ class LeaveApplication(Document):
                                                          ['total_leaves_allocated'])
             else:
                 frappe.throw("you have exceeded your leave balance!")
-
+    
+    # return leave balance when cancel
     def retriv_balance(self):
         frappe.db.set_value('Leave Allocation', 'Leave Allocation for ' + self.employee_name,
                             {'total_leaves_allocated': self.leave_balance + self.total_leave_days})
