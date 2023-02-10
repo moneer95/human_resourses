@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:leave_type",
+ "creation": "2023-01-21 15:46:46.857314",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "leave_type",
+  "max_continuous_leave_days",
+  "must_application_before"
+ ],
+ "fields": [
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Data",
+   "label": "Leave Type",
+   "unique": 1
+  },
+  {
+   "fieldname": "max_continuous_leave_days",
+   "fieldtype": "Int",
+   "label": "Max Continuous Leave Days"
+  },
+  {
+   "fieldname": "must_application_before",
+   "fieldtype": "Int",
+   "label": "Must Application Before"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-01 16:10:44.122285",
+ "modified_by": "Administrator",
+ "module": "Human Resourse",
+ "name": "Leave Type",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "creation": "2023-01-28 14:50:55.780239",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "department_name",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "full_name",
+  "age",
+  "image",
+  "status",
+  "employee_number",
+  "date_of_birth",
+  "date_of_joining",
+  "mobile",
+  "cv",
+  "cv_evaluation",
+  "employee_education"
+ ],
+ "fields": [
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Link",
+   "label": "Department Name",
+   "options": "Department"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First_Name"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle_Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last_Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full_Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "active\ninactive\nsuspended\nleft"
+  },
+  {
+   "fieldname": "employee_number",
+   "fieldtype": "Int",
+   "label": "Employee_Number"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Phone",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "cv",
+   "fieldtype": "Text",
+   "label": "CV"
+  },
+  {
+   "fieldname": "cv_evaluation",
+   "fieldtype": "Data",
+   "label": "CV Evaluation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_education",
+   "fieldtype": "Table",
+   "label": "Employee Education",
+   "options": "Employee Education"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-29 10:03:41.760197",
+ "modified_by": "Administrator",
+ "module": "Human Resourse",
+ "name": "Employee",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
